@@ -24,6 +24,7 @@ can set the rules using the endpoint '/rule'
 for example:
 
 ### POST:
+```
 curl --location 'http://localhost:3001/rule' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -42,8 +43,10 @@ curl --location 'http://localhost:3001/rule' \
     }
   }
 }'
+```
 
 ### PUT
+```
 curl --location --request PUT 'http://localhost:3001/rule' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -62,11 +65,13 @@ curl --location --request PUT 'http://localhost:3001/rule' \
     }
   }
 }'
+```
 
 ### GET
+```
 curl --location 'http://localhost:3001/rule' \
 --data ''
-
+```
 
 ## 6. 
 Use the next endpoint to send a mail "/notification"
@@ -74,14 +79,14 @@ Use the next endpoint to send a mail "/notification"
 For example:
 
 ### POST 
-
+```
 curl --location 'http://localhost:3001/notification' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "type": "news",
     "email": "demianperona@gmail.com"
 }'
-
+```
 
 "type" is the type of notification mail to send
 "email" is the recipient's email
